@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca fotos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Busca foto</h1>
+    <div class="container">
+        <div id="map"></div> <!-- Este div contendrá el mapa -->
+        <div class="image-container">
+            <img id="location-image" src="multimedia/Oviedo.jpg" alt="Descripción de la imagen" />
+            <div id="info">
+                <h3 id="place-name"></h3>
+                <p id="distance"></p>
+                <p id="score">Puntuación: 0</p>
+                <p id="total-score">Puntuación total: 0</p>
+            </div>
+            <button id="next-button">Siguiente</button>
+            <button id="confirm-button">Confirmar</button>
+        </div>
+    </div>
+    <div id="footer">
+        <p>Daniel Ferreira Gómez - UO277603</p>
+    </div>
+    <script src="main.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap">
+        </script>
+</body>
+
+</html>
